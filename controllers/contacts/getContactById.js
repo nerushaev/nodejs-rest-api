@@ -7,6 +7,7 @@ const getContactById = async (req, res) => {
     if (!contact) {
       throw NotFound(`Contact with id=${contactId} not found...`);
     }
+  
     res.json({
       status: "success",
       code: 200,
